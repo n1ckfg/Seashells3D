@@ -65,7 +65,8 @@ SCNNode *CreateLineSegNode(SCNGeometry *line)
 SCNNode *CreateLine(SCNVector3 positions[])
 {
     SCNNode *parentNode = [SCNNode node];
-    for (int i=1; i<sizeof(positions); i++) {
+    for (int i=1; i<sizeof(positions); i++)
+    {
         [parentNode addChildNode:CreateLineSegNode(CreateLineSeg(positions[i-1], positions[i]))];
     }
     return parentNode;
@@ -118,8 +119,10 @@ SCNGeometry *CreateSeashell()
 	unsigned short *idx = indices;
 	unsigned short stripStart = 0;
 
-	for (NSInteger i = 0; i < SUBDIVISIONS; i++, stripStart += (SUBDIVISIONS + 1)) {
-		for (NSInteger j = 0; j < SUBDIVISIONS; j++) {
+	for (NSInteger i = 0; i < SUBDIVISIONS; i++, stripStart += (SUBDIVISIONS + 1))
+    {
+		for (NSInteger j = 0; j < SUBDIVISIONS; j++)
+        {
 			unsigned short v1 = stripStart + j;
 			unsigned short v2 = stripStart + j + 1;
 			unsigned short v3 = stripStart + (SUBDIVISIONS+1) + j;
@@ -359,17 +362,22 @@ NSTimer *timer;
     timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(handleTimer:) userInfo:nil repeats:YES];
 }
 
-- (void) handleTimer:(NSTimer *)theTimer {
-    if ([theTimer isValid]) {
+- (void) handleTimer:(NSTimer *)theTimer
+{
+    if ([theTimer isValid])
+    {
         //implement your methods
         SCNVector3 pos2[] = { SCNVector3Make(0,0,0), SCNVector3Make(10,10,10), SCNVector3Make(7,7,7), SCNVector3Make(0,0,0) };
         SCNNode *lineNode2 = CreateLine(pos2);
         [scene.rootNode addChildNode:lineNode2];
     }
     
-    - (void) renderer:(id<SCNSceneRenderer>) renderer {
-updateAtTime:(NSTimeInterval)time;
-    }
+    /*
+     - (void) renderer:(id<SCNSceneRenderer>) renderer
+     {
+        updateAtTime:(NSTimeInterval)time;
+     }
+    */
 }
 
 @end
