@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019F8E8D2121B23D003F9DE3 /* test_hidden_maya.dae in Resources */ = {isa = PBXBuildFile; fileRef = 019F8E8C2121B23D003F9DE3 /* test_hidden_maya.dae */; };
+		019F8E8F2121B254003F9DE3 /* test_scale_maya.dae in Resources */ = {isa = PBXBuildFile; fileRef = 019F8E8E2121B253003F9DE3 /* test_scale_maya.dae */; };
+		019F8E912121B31F003F9DE3 /* test_scale_blender.dae in Resources */ = {isa = PBXBuildFile; fileRef = 019F8E902121B31E003F9DE3 /* test_scale_blender.dae */; };
 		C9690FD718E28B52002AE0ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9690FD618E28B52002AE0ED /* Cocoa.framework */; };
 		C9690FE118E28B52002AE0ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9690FDF18E28B52002AE0ED /* InfoPlist.strings */; };
 		C9690FE318E28B52002AE0ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9690FE218E28B52002AE0ED /* main.m */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019F8E8C2121B23D003F9DE3 /* test_hidden_maya.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = test_hidden_maya.dae; path = ../../Desktop/test_hidden_maya.dae; sourceTree = "<group>"; };
+		019F8E8E2121B253003F9DE3 /* test_scale_maya.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = test_scale_maya.dae; path = ../../Desktop/test_scale_maya.dae; sourceTree = "<group>"; };
+		019F8E902121B31E003F9DE3 /* test_scale_blender.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = test_scale_blender.dae; path = ../../Desktop/test_scale_blender.dae; sourceTree = "<group>"; };
 		C9690FD318E28B52002AE0ED /* Seashells3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seashells3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9690FD618E28B52002AE0ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9690FD918E28B52002AE0ED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -54,6 +60,9 @@
 				C9690FDC18E28B52002AE0ED /* Seashells3D */,
 				C9690FD518E28B52002AE0ED /* Frameworks */,
 				C9690FD418E28B52002AE0ED /* Products */,
+				019F8E8C2121B23D003F9DE3 /* test_hidden_maya.dae */,
+				019F8E8E2121B253003F9DE3 /* test_scale_maya.dae */,
+				019F8E902121B31E003F9DE3 /* test_scale_blender.dae */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,7 +179,10 @@
 				C9690FE118E28B52002AE0ED /* InfoPlist.strings in Resources */,
 				C9690FEF18E28B52002AE0ED /* Images.xcassets in Resources */,
 				C9690FE718E28B52002AE0ED /* Credits.rtf in Resources */,
+				019F8E8D2121B23D003F9DE3 /* test_hidden_maya.dae in Resources */,
 				C9690FED18E28B52002AE0ED /* MainMenu.xib in Resources */,
+				019F8E912121B31F003F9DE3 /* test_scale_blender.dae in Resources */,
+				019F8E8F2121B254003F9DE3 /* test_scale_maya.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
